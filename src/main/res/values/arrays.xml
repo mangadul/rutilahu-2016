@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ns_menu_items">
+        <item>ns_menu_snippet1</item>
+        <item>ns_menu_snippet2</item>
+        <item>ns_menu_snippet3</item>
+        <item>ns_menu_snippet4</item>
+        <item>ns_menu_snippet5</item>
+        <item>ns_menu_snippet6</item>
+    </string-array>
+
+    <array name="ns_menu_items_icon">
+        <item>ic_assignment_black_24dp</item>
+        <item>ic_assignment_returned_black_24dp</item>
+        <item>ic_autorenew_black_24dp</item>
+        <item>ic_file_download_black_24dp</item>
+        <item>ic_file_upload_black_24dp</item>
+        <item>ic_place_black_24dp</item>
+    </array>
+
+    <string-array name="pilihanmenu">
+        <item>View</item>
+        <item>Input Data</item>
+    </string-array>
+
+</resources>

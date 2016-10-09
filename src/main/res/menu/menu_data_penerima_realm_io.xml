@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alphamedia.rutilahu.DataPenerimaRealmIO">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+        android:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/action_refresh"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/ic_refresh_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_downloads"
+        android:title="@string/action_download"
+        android:icon="@drawable/ic_file_download_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_upload"
+        android:title="@string/action_upload"
+        android:icon="@drawable/ic_file_upload_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_backup"
+        android:title="@string/action_backup"
+        android:icon="@drawable/ic_file_download_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/map"
+        android:title="@string/action_map"
+        android:icon="@drawable/ic_location_on_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_black_18dp"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.alphamedia.rutilahu.DetailActivity"
+    android:layout_height="wrap_content" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    android:keepScreenOn="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_foto_penerimaatas"
+            android:src="@drawable/ic_person_outline_black_36dp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/btn_foto_penerimaatas">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textSize="9sp"
+            android:layout_toRightOf="@+id/nama">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:textSize="12sp"
+            android:id="@+id/ktp"
+            android:layout_toRightOf="@+id/btn_foto_penerimaatas">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ktp"
+            android:textSize="10sp"
+            android:id="@+id/alamat"
+            android:layout_toRightOf="@+id/btn_foto_penerimaatas">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat"
+            android:id="@+id/kecamatan"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/btn_foto_penerimaatas">
+        </TextView>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@id/kecamatan"
+            android:id="@+id/kabupaten"
+            android:layout_toRightOf="@+id/btn_foto_penerimaatas">
+        </TextView>
+
+    </RelativeLayout>
+
+    <EditText
+        android:hint="@string/edit_nama"
+        android:id="@+id/edit_nama"
+        android:maxLength="250"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </EditText>
+
+    <EditText
+        android:hint="@string/edit_ktp"
+        android:maxLength="50"
+        android:id="@+id/edit_ktp"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </EditText>
+
+    <EditText
+        android:hint="@string/edit_kk"
+        android:id="@+id/edit_kk"
+        android:inputType="number"
+        android:maxLength="100"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </EditText>
+
+    <!--
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:prompt="@string/pilih_status">
+    </Spinner>
+    -->
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_penerima"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_penerima"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_penerima"
+            android:id="@+id/file_foto_penerima"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="Foto Penerima"
+            android:layout_width="wrap_content"
+            android:id="@+id/foto_penerima"
+            android:layout_height="match_parent">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_depan"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_depan"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_depan"
+            android:id="@+id/et_tampak_depan"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="@string/txt_btn_depan"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_depan"
+            android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_samping1"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_samping1"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_samping_kiri"
+            android:id="@+id/foto_tampak_samping1"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="@string/txt_bnt_samping_kiri"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_tampak_samping1"
+            android:layout_height="match_parent">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_samping2"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_samping2"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_samping_kanan"
+            android:id="@+id/foto_tampak_samping2"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="@string/txt_btn_samping_kanan"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_tampak_samping2"
+            android:layout_height="match_parent">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_jamban"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_jamban"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_jamban"
+            android:id="@+id/foto_jamban"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+        <Button
+            android:text="@string/txt_jamban"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_jamban"
+            android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_dapur"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_dapur"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_dapur"
+            android:id="@+id/foto_dapur"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="Dapur"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_dapur"
+            android:layout_height="match_parent">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_sumber_air"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_sumberair"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_sumber_air"
+            android:id="@+id/foto_sumber_air"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+
+        <Button
+            android:text="@string/txt_sumber_air"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_sumber_air"
+            android:layout_height="match_parent">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_foto_belakang"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_foto_belakang"
+            android:src="@drawable/ic_photo_black_18dp" />
+
+        <EditText
+            android:editable="false"
+            android:hint="@string/hint_foto_belakang"
+            android:id="@+id/foto_belakang"
+            android:layout_height="wrap_content"
+            android:layout_width="178dp"
+            android:layout_weight="1.01"
+            android:textSize="12dip">
+        </EditText>
+        <Button
+            android:text="@string/txt_belakang"
+            android:layout_width="wrap_content"
+            android:id="@+id/btn_foto_belakang"
+            android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/loclong"
+            android:layout_width="160dip"
+            android:hint="@string/hint_long"
+            android:editable="false">
+        </EditText>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/loclat"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="false"
+            android:layout_width="160dip"
+            android:hint="latitude"
+            android:editable="false">
+        </EditText>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:gravity="bottom"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/devid"
+            android:editable="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imei" />
+
+        <EditText
+            android:id="@+id/keterangan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:lines="1"
+            android:hint="@string/keterangan"
+            android:inputType="textLongMessage"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relimgphoto"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95"
+            android:gravity="right">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnsimpan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_btn_simpan"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Aplikasi RUTILAHU</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail_activity">detail_activity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_data_penerima">DataPenerima</string>
+    <string name="title_activity_detail_penerima">Detail Data Penerima</string>
+    <string name="search_title">Cari</string>
+    <string name="action_search">Search</string>
+    <string name="action_download">Download Data</string>
+    <string name="search_hint">Cari</string>
+    <string name="app_label">Aplikasi Pendataan Rutilahu</string>
+    <string name="title_activity_search">Pencarian</string>
+
+    <string name="title_activity_data_penerima_realm_io">Data Penerima</string>
+    <string name="exit_message">Apakah anda yakin akan keluar dari aplikasi ?</string>
+    <string name="exit_title">Keluar Aplikasi</string>
+    <string name="title_about">Tentang Program</string>
+    <string name="about_url">http://demo.alphamedia.web.id/</string>
+    <string name="button_open_browser">Open Browser</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="title_sync">Sinkronisasi Data</string>
+
+    <string name="msg_about">Dikembangkan oleh Alpha Media Consultant untuk Waditra Reka Cipta.\nKontak: info@alphamedia.web.id\nTahun dibuat: 2015.\nVersi: 1.2</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_map">Peta</string>
+
+    <string name="action_save">Simpan</string>
+    <string name="menu_refresh">Refresh</string>
+
+    <string name="drawer_text"></string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <string name="ns_menu_main_header">Menu</string>
+    <string name="ns_menu_main_header2">Profile</string>
+
+    <string name="username">Masukan Nama Pengguna</string>
+    <string name="password">Masukan Kata Kunci</string>
+
+    <string name="ns_menu_open">Menu</string>
+    <string name="ns_menu_close">Navigation Drawer</string>
+
+    <string name="ns_menu_snippet1">Data Penerima</string>
+    <string name="ns_menu_snippet2">Hasil Catat</string>
+    <string name="ns_menu_snippet3">Sinkronisasi Data</string>
+    <string name="ns_menu_snippet4">Download Data</string>
+    <string name="ns_menu_snippet5">Upload ke Server</string>
+    <string name="ns_menu_snippet6">Peta</string>
+    <string name="avatar">User Penerima</string>
+    <string name="gambar_icon_detail">Gambar Icon Detail</string>
+    <string name="title_activity_upload">Upload Data</string>
+    <string name="detail_view">Detail View</string>
+    <string name="avatarimg">avatar</string>
+    <string name="search_hint_penerima">Nama, Jalan, Kecamatan, Kabupaten</string>
+    <string name="title_activity_login">Login</string>
+    <string name="button_login">Login</string>
+    <string name="title_activity_detail">Input Data Penerima</string>
+    <string name="jalan_desa">Jalan Desa</string>
+    <string name="namalengkap">Nama Lengkap</string>
+    <string name="jk">Jenis Kelamin</string>
+    <string name="ktp">KTP</string>
+    <string name="kk">Kartu Keluarga</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="desa">Desa / Kelurahan</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="btnfoto">Foto</string>
+    <string name="foto_tampak_depan">Tampak Depan</string>
+    <string name="foto_tampak_samping2">Samping Kanan</string>
+    <string name="foto_tampak_samping1">Samping Kiri</string>
+    <string name="foto_tampak_dapur">Foto Dapur</string>
+    <string name="foto_jamban">Foto Jamba</string>
+    <string name="fotoSumberAir">Foto Sumber Air</string>
+    <string name="foto_dapur">Foto Dapur</string>
+    <string name="fotoPenerima">Foto Penerima</string>
+    <string name="tgl_lahir">Tgl Lahir</string>
+
+    <string name="status_sudah">SUDAH</string>
+    <string name="status_belum">BELUM</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="pilih_status">Status Catat</string>
+    <string name="keterangan">keterangan</string>
+    <string name="hint_alamat">Alamat Penerima</string>
+    <string name="posisi_gps">Posisi GPS</string>
+    <string name="txt_sumber_air">Sumber Air</string>
+    <string name="hint_long">longitude</string>
+    <string name="txt_ket">Keterangan</string>
+    <string name="txt_btn_simpan">SIMPAN</string>
+    <string name="hint_sumber_air">foto sumber air</string>
+    <string name="hint_foto_dapur">foto dapur</string>
+    <string name="txt_jamban">Jamban</string>
+    <string name="hint_foto_jamban">foto jamban</string>
+    <string name="txt_btn_samping_kanan">Samping Kanan</string>
+    <string name="hint_foto_samping_kanan">tampak samping kanan</string>
+    <string name="txt_bnt_samping_kiri">Samping Kiri</string>
+    <string name="hint_foto_samping_kiri">tampak samping kiri</string>
+    <string name="txt_btn_depan">Tampak Depan</string>
+    <string name="hint_foto_depan">foto depan</string>
+    <string name="hint_foto_penerima">Foto Penerima</string>
+    <string name="txt_data_foto">Data Foto</string>
+    <string name="txt_status_catat">Status Catat</string>
+    <string name="IMEI">imei</string>
+    <string name="imei">IMEI</string>
+    <string name="hint_foto_belakang">tampak belakang</string>
+    <string name="txt_belakang">Tampak Belakang</string>
+    <string name="edit_ktp">perbaharui data ktp</string>
+    <string name="edit_kk">perbaharui data kk</string>
+    <string name="action_backup">Backup Data</string>
+    <string name="title_activity_backup">Backup Data</string>
+    <string name="edit_nama">perbaharui nama lengkap</string>
+
+</resources>
